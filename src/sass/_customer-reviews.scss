@@ -1,0 +1,147 @@
+.review-section.section {
+  padding-top: 0;
+  
+}
+.review-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 767px) {
+  .review-section {
+    background-image: url('../images/products/ice-cream-fon-mobile.png');
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .review-section {
+    background-image: url('../images/products/ice-cream-fon-mobile@2x.png');
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:1199px) {
+  .review-container {
+    background-image: url('../images/products/ice-cream-fon-tablet.png');
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+    .review-container {
+    background-image: url('../images/products/ice-cream-fon-tablet@2x.png');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .review-section {
+    background-image: url('../images/products/ice-cream-fon-desktop.png');
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .review-section {
+    background-image: url('../images/products/ice-cream-fon-desktop@2x.png');
+  }
+}
+
+.adv-main-image {
+  width: 100%;
+  height: auto;
+margin: auto;
+  
+}
+
+.review__photo {
+  margin: auto;
+  margin-bottom: 32px;
+  margin-top: 60px;
+}
+.reviews {
+  margin: auto;
+  margin-bottom: 83px;
+  padding: 40px 60px 20px 60px;
+  min-width: 280px;
+  background: var(--secondary-bg);
+  border-radius: 10px;
+}
+.review__text {
+  position: relative;
+  display: flex;
+  align-self: center;
+  font-family: var(--primary-font);
+    font-weight: 400;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+
+  color: var(--primary-text-color);
+
+  
+
+}
+.review__name {
+  display: block;
+  margin: 32px auto;
+  font-family: var(--primary-font);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.88;
+text-align: center;
+color: var(--accent-color-text);
+}
+@media screen and (max-width:767px) {
+  .review__text{
+    background: repeating-linear-gradient(
+      transparent 0px,
+      transparent 30px,
+      var(--primary-text-color) 10px,
+      var(--primary-text-color) 31px
+    );
+  }
+  .review__name{
+    display: none;
+  }
+}
+@media screen and (min-width:768px){
+  .review__text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  .reviews {
+    padding: 28px 80px;
+    min-width: 705px;
+    margin-bottom: 0;
+  }
+} 
+ 
+
+@media screen and (min-width:1200px) {
+  .review__text{
+    font-size: 16px;
+  }
+  
+}
+.dot-box {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot-active {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color:var(--secondary-bg);
+}
