@@ -1,0 +1,260 @@
+@media screen and (max-width: 767px) {
+  .contacts__representatives:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-absolute {
+    position: absolute;
+    width: 58vw;
+    transform: translate(0, -105%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contacts-absolute {
+    width: 91vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contacts-absolute {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contacts-absolute {
+    width: 88vw;
+  }
+}
+
+.contacts-section {
+  position: relative;
+  background-color: #84a178;
+  padding-bottom: 40px;
+  padding-top: 100px;
+}
+
+.contacts__representatives {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: #fcfcfc;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.contacts__container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contacts__list {
+  margin-bottom: 32px;
+}
+
+.contacts__item {
+  display: inline-block;
+  max-width: 130px;
+  background: #f8d24e;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+}
+
+.contacts__category {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fcfcfc;
+}
+
+.contacts-group {
+  margin-bottom: 12px;
+}
+
+.contacts__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+.contacts__address {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #d6936d;
+}
+
+.contacts-address-time__list {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 24px;
+}
+
+.contacts__time {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: #ababab;
+}
+
+.contacts__time-space {
+  margin-bottom: 8px;
+}
+
+.phone-link {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.mail-link {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.phone-link__contact {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5px;
+  color: #d6936d;
+}
+
+.mail-link__contact {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5px;
+  color: #d6936d;
+}
+
+.button-contact_locations {
+  background: #f8d24e;
+  border-radius: 10px;
+  width: 196px;
+  height: 42px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28px;
+  color: #131313;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  padding: 12px 34px;
+  align-self: center;
+  margin: auto;
+}
+
+.button-contact_Franchise {
+  background: #84a178;
+  border-radius: 10px;
+  width: 196px;
+  height: 42px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28px;
+  color: #fcfcfc;
+  border: 2px solid #f8d24e;
+  cursor: pointer;
+  display: block;
+  padding: 12px 34px;
+  align-self: center;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-section {
+    padding-top: 280px;
+  }
+
+  .contacts__container {
+    position: relative;
+  }
+
+  .contacts__list {
+    position: absolute;
+    display: flex;
+    gap: 32px;
+    width: 93vw;
+    transform: translate(1%, -109%);
+  }
+
+  .contacts__representatives {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+
+  .button-list-contacts {
+    display: flex;
+    gap: 16px;
+  }
+
+  .button-contact_Franchise {
+    margin-top: 0;
+  }
+
+  .button-list-contacts {
+    justify-content: center;
+  }
+
+  .contacts__item {
+    margin-bottom: 32px;
+  }
+
+  .contacts-address-time__list {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+
+  .contacts__time-space {
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contacts__list {
+    transform: translate(-12%, -109%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    width: 97vw;
+    transform: translate(0, -115%);
+  }
+  .contacts-section {
+    padding-top: 475px;
+  }
+}
