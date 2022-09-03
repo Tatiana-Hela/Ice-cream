@@ -1,19 +1,21 @@
-.section {
+.review-section.section {
   padding-top: 0;
-  position: relative;
+  
+}
+.review-section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 @media screen and (max-width: 767px) {
-  .section {
+  .review-section {
     background-image: url('../images/products/ice-cream-fon-mobile.png');
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .section {
+    .review-section {
     background-image: url('../images/products/ice-cream-fon-mobile@2x.png');
   }
 }
@@ -32,14 +34,14 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .section {
+  .review-section {
     background-image: url('../images/products/ice-cream-fon-desktop.png');
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .section {
+  .review-section {
     background-image: url('../images/products/ice-cream-fon-desktop@2x.png');
   }
 }
@@ -79,6 +81,16 @@ margin: auto;
   
 
 }
+.review__name {
+  display: block;
+  margin: 32px auto;
+  font-family: var(--primary-font);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.88;
+text-align: center;
+color: var(--accent-color-text);
+}
 @media screen and (max-width:767px) {
   .review__text{
     background: repeating-linear-gradient(
@@ -104,16 +116,7 @@ margin: auto;
     margin-bottom: 0;
   }
 } 
-  .review__name {
-    display: block;
-    margin: 32px auto;
-    font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
-  color: var(--accent-color-text);
-  }
+ 
 
 @media screen and (min-width:1200px) {
   .review__text{
