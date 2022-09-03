@@ -1,0 +1,168 @@
+.products {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 767px) {
+  .products {
+    background-image: url('../images/products/ice-cream-fon-mobile.png');
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .products {
+    background-image: url('../images/products/ice-cream-fon-mobile@2x.png');
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products {
+    background-image: url('../images/products/ice-cream-fon-tablet.png');
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+  .products {
+    background-image: url('../images/products/ice-cream-fon-tablet@2x.png');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products {
+    background-image: url('../images/products/ice-cream-fon-desktop.png');
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .products {
+    background-image: url('../images/products/ice-cream-fon-desktop@2x.png');
+  }
+}
+.products__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 108px;
+}
+.products__label {
+  font-family: var(--primary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-color-text);
+}
+.products__title {
+  margin-bottom: 108px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color-text);
+}
+.products__card-title {
+  margin-bottom: 40px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+.products__description {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.78;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--secondary-text-color);
+}
+.products__card {
+  position: relative;
+  min-width: 280px;
+  height: 420px;
+  border-radius: 24px;
+  padding-top: 123px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+}
+
+.products__card.products__card--green-bg {
+  background-color: var(--card-green);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    width: 201px;
+    height: 211px;
+    border-radius: 100.166px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    background-repeat: no-repeat;
+  }
+}
+.products__card.products__card--yellow-bg {
+  background-color: var(--card-yellow);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    width: 201px;
+    height: 211px;
+    border-radius: 100.166px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    background-repeat: no-repeat;
+  }
+}
+.products__card.products__card--red-bg {
+  background-color: var(--card-red);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    width: 201px;
+    height: 211px;
+    border-radius: 100.166px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
+  }
+}
