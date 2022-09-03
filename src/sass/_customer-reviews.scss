@@ -1,5 +1,5 @@
 .section {
-  padding-top: 100px;
+  padding-top: 0;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,15 +18,15 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .section {
+@media screen and (min-width: 768px) and (max-width:1199px) {
+  .review-container {
     background-image: url('../images/products/ice-cream-fon-tablet.png');
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
-  screen and (min-resolution: 192dpi) and (max-width: 1199px),
-  screen and (min-resolution: 2dppx) and (max-width: 1199px) {
-  .section {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+    .review-container {
     background-image: url('../images/products/ice-cream-fon-tablet@2x.png');
   }
 }
@@ -45,19 +45,18 @@
 }
 
 .adv-main-image {
-  position: absolute;
-  min-width: 279px;
-  top: -23px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  width: 100%;
+  height: auto;
+margin: auto;
+  
 }
+
 .review__photo {
   margin: auto;
   margin-bottom: 32px;
   margin-top: 60px;
 }
 .review {
-  position: relative;
   margin: auto;
   margin-bottom: 83px;
   padding: 40px 60px 20px 60px;
@@ -66,28 +65,61 @@
   border-radius: 10px;
 }
 .review__text {
-  min-width: 157px;
+  position: relative;
   display: flex;
   align-self: center;
   font-family: var(--primary-font);
-  font-style: normal;
-  font-weight: 400;
+    font-weight: 400;
   font-size: 12px;
-  line-height: 255%;
+  line-height: 2.58;
   text-align: center;
 
   color: var(--primary-text-color);
+
+  
+
 }
-.line {
-  position: absolute;
-  width: 180px;
-  height: 100%;
-  background: repeating-linear-gradient(
-    transparent 0px,
-    transparent 30px,
-    var(--primary-text-color) 10px,
-    var(--primary-text-color) 31px
-  );
+@media screen and (max-width:767px) {
+  .review__text{
+    background: repeating-linear-gradient(
+      transparent 0px,
+      transparent 30px,
+      var(--primary-text-color) 10px,
+      var(--primary-text-color) 31px
+    );
+  }
+  .review__name{
+    display: none;
+  }
+}
+@media screen and (min-width:768px){
+  .review__text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  .review {
+    padding: 28px 80px;
+    min-width: 705px;
+    margin-bottom: 0;
+  }
+} 
+  .review__name {
+    display: block;
+    margin: 32px auto;
+    font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  color: var(--accent-color-text);
+  }
+
+@media screen and (min-width:1200px) {
+  .review__text{
+    font-size: 16px;
+  }
+  
 }
 .dot-box {
   display: flex;
@@ -101,4 +133,12 @@
   background-color: #d9d9d9;
   border-radius: 50%;
   cursor: pointer;
+}
+.dot-active {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color:var(--secondary-bg);
 }
