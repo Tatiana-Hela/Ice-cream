@@ -1,6 +1,7 @@
-.review-section.section {
+.review-section {
   padding-top: 0;
 }
+
 .review-section {
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,6 +10,7 @@
 @media screen and (max-width: 767px) {
   .review-section {
     background-image: url('../images/products/ice-cream-fon-mobile.png');
+    padding-bottom: 360px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -23,6 +25,10 @@
   .review-container {
     background-image: url('../images/products/ice-cream-fon-tablet.png');
   }
+
+  .review-section {
+    padding-bottom: 380px;
+  }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
   screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
@@ -35,6 +41,7 @@
 @media screen and (min-width: 1200px) {
   .review-section {
     background-image: url('../images/products/ice-cream-fon-desktop.png');
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
