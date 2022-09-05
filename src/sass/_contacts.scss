@@ -7,7 +7,7 @@
 @media screen and (max-width: 767px) {
   .contacts-absolute {
     position: absolute;
-    width: 58vw;
+    width: 94vw;
     transform: translate(0, -105%);
   }
 }
@@ -33,7 +33,7 @@
 .contacts-section {
   position: relative;
   background-color: #84a178;
-  padding-bottom: 32px;
+  padding-bottom: 30px;
   padding-top: 100px;
 }
 
@@ -265,8 +265,8 @@
     position: absolute;
     display: flex;
     gap: 32px;
-    width: 93vw;
-    transform: translate(0%, -106%);
+    width: 94vw;
+    transform: translate(1%, -106%);
   }
 
   .contacts__representatives {
@@ -327,7 +327,7 @@
 
 @media screen and (min-width: 1024px) {
   .contacts__list {
-    transform: translate(-12%, -111%);
+    transform: translate(1%, -111%);
   }
   .contacts-section {
     padding-top: 506px;
@@ -337,7 +337,7 @@
 
 @media screen and (min-width: 1200px) {
   .contacts__list {
-    width: 95vw;
+    width: 94vw;
     transform: translate(1%, -106%);
   }
 
@@ -380,13 +380,13 @@
 @media screen and (min-width: 1366px) {
   .contacts__list {
     width: 94vw;
-    transform: translate(-5%, -106%);
+    transform: translate(2%, -106%);
   }
 }
 
 @media screen and (min-width: 1440px) {
   .contacts__list {
-    width: 93vw;
-    transform: translate(-6.5%, -106%);
+    width: 94vw;
+    transform: translate(2%, -106%);
   }
 }

@@ -53,9 +53,11 @@
 }
 
 .adv-main-image {
+  position: absolute;
   width: 100%;
   height: auto;
   margin: auto;
+  border-radius: 26px;
 }
 
 .review__photo {
@@ -151,4 +153,75 @@
   border-radius: 50%;
   cursor: pointer;
   background-color: var(--secondary-bg);
+}
+
+.review-container {
+  position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .review-section {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .adv-main-image {
+    top: -21%;
+    transform: translate(0%, -50%);
+    width: 93%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .review-section {
+    padding-top: 120px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .adv-main-image {
+    top: -18%;
+    transform: translate(0%, -69%);
+    width: 92%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .review-section {
+    padding-top: 250px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .adv-main-image {
+    top: -50%;
+    transform: translate(0%, -60%);
+    width: 93%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .review-section {
+    background-image: url('../images/products/ice-cream-fon-tablet.png');
+  }
+
+  .review-section {
+    padding-bottom: 380px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+  .review-section {
+    background-image: url('../images/products/ice-cream-fon-tablet@2x.png');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .review-section {
+    padding-top: 430px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .adv-main-image {
+    top: -87%;
+    transform: translate(7%, -65%);
+    width: 85%;
+  }
 }

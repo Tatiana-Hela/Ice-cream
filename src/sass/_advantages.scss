@@ -1,16 +1,16 @@
 .advantages {
   padding-top: 40px;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
   background-color: var(--secondary-bg);
   @media screen and (min-width: 768px) {
     padding-top: 53px;
-    padding-bottom: 556px;
+    padding-bottom: 85px;
     padding-left: 76px;
     padding-right: 76px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 60px;
-    padding-bottom: 686px;
+    padding-bottom: 150px;
   }
 }
 .advantages-list {
@@ -37,8 +37,8 @@
   }
 }
 .advantages-list__item-first::before {
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: var(--accent-color);
   display: block;
@@ -49,8 +49,8 @@
   background-image: url(/src/images/about/cow.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -69,8 +69,8 @@
   }
 }
 .advantages-list__item-second::before {
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: var(--accent-color);
   display: block;
@@ -81,8 +81,8 @@
   background-image: url(/src/images/about/weight.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -101,8 +101,8 @@
   }
 }
 .advantages-list__item-third::before {
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: var(--accent-color);
   display: block;
@@ -113,8 +113,8 @@
   background-image: url(/src/images/about/ice-cream.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
