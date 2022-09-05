@@ -15,8 +15,10 @@
               </p>
             </li>
             <li class="contacts-address-time__list">
-              <p class="contacts__title">Monday - Friday</p>
-              <p class="contacts__time">06:00 AM - 10:00 PM</p>
+              <div class="contacts-group">
+                <p class="contacts__title">Monday - Friday</p>
+                <p class="contacts__time">06:00 AM - 10:00 PM</p>
+              </div>
               <p class="contacts__title">Saturday - Sunday</p>
               <p class="contacts__time">08:00 AM - 16:00 PM</p>
             </li>
@@ -46,12 +48,14 @@
             <li class="contacts-address-time__list">
               <p class="contacts__title">Los Angeles</p>
               <p class="contacts__address">
-                1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
+                1003 Manhattan, Manhattan Beach, CA 90263, USA
               </p>
             </li>
             <li class="contacts-address-time__list">
-              <p class="contacts__title">Monday - Friday</p>
-              <p class="contacts__time">06:00 AM - 10:00 PM</p>
+              <div class="contacts-group">
+                <p class="contacts__title">Monday - Friday</p>
+                <p class="contacts__time">06:00 AM - 10:00 PM</p>
+              </div>
               <p class="contacts__title">Saturday - Sunday</p>
               <p class="contacts__time">08:00 AM - 16:00 PM</p>
             </li>
@@ -81,12 +85,14 @@
             <li class="contacts-address-time__list">
               <p class="contacts__title">Nev York</p>
               <p class="contacts__address">
-                726 Sterling Pl, Brooklyn, NY 11222, USA
+                10726 Sterling Pl, Brooklyn, New York 11222, USA
               </p>
             </li>
             <li class="contacts-address-time__list">
-              <p class="contacts__title">Monday - Friday</p>
-              <p class="contacts__time">06:00 AM - 10:00 PM</p>
+              <div class="contacts-group">
+                <p class="contacts__title">Monday - Friday</p>
+                <p class="contacts__time">06:00 AM - 10:00 PM</p>
+              </div>
               <p class="contacts__title">Saturday - Sunday</p>
               <p class="contacts__time">08:00 AM - 16:00 PM</p>
             </li>
@@ -111,13 +117,25 @@
     <div class="button-list">
       <ul class="button-list-contacts list">
         <li class="button-list-contacts__contact">
-          <button type="button" class="button-contact button-contact_locations">
+          <button
+            type="button"
+            class="button-contact-loc button-contact_locations"
+          >
             Our Locations
+            <svg class="contacts-btn-los" width="15" height="15">
+              <use href="./images/icons.svg#arrow-btn"></use>
+            </svg>
           </button>
         </li>
         <li class="button-list-contacts__contact">
-          <button type="button" class="button-contact button-contact_Franchise">
+          <button
+            type="button"
+            class="button-contact-fra button-contact_Franchise"
+          >
             Franchise
+            <svg class="contacts-btn-fra" width="15" height="15">
+              <use href="./images/icons.svg#arrow-btn"></use>
+            </svg>
           </button>
         </li>
       </ul>
