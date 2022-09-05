@@ -133,14 +133,25 @@
   font-size: 12px;
   line-height: 1.5px;
   color: #131313;
+
+  &:hover,
+  &:focus {
+    color: #d6936d;
+  }
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-link__contact {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5px;
-  //color: #d6936d;
   color: #131313;
+
+  &:hover,
+  &:focus {
+    color: #d6936d;
+  }
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-contact_locations {
@@ -163,14 +174,37 @@
     background: #0a8817;
     color: #131313;
   }
-  &:focus {
+  &:focus,
+  svg:focus {
     background: #0a8817;
     color: #fcfcfc;
+    fill: #fcfcfc;
   }
   &:disabled {
     background: #ababab;
     color: #131313;
   }
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-contact-loc {
+  position: relative;
+  padding-right: 45px;
+}
+
+.contacts-btn-los {
+  position: absolute;
+  transform: translate(20%, -40%);
+}
+
+.button-contact-fra {
+  position: relative;
+  padding-right: 15px;
+}
+
+.contacts-btn-fra {
+  position: absolute;
+  transform: translate(25%, -43%);
 }
 
 .button-contact_Franchise {
@@ -185,24 +219,26 @@
   border: 2px solid #f8d24e;
   cursor: pointer;
   display: block;
-  padding: 12px 34px;
   align-self: center;
   margin-top: 16px;
   margin-left: auto;
   margin-right: auto;
 
-  &:hover {
+  &:hover,
+  svg:hover {
     border: 2px solid #0a8817;
-    color: #131313;
   }
-  &:focus {
+  &:focus,
+  svg:focus {
     border: 2px solid #0a8817;
     color: #fcfcfc;
+    fill: #fcfcfc;
   }
   &:disabled {
     border: 2px solid #ababab;
     color: #131313;
   }
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -230,7 +266,7 @@
     display: flex;
     gap: 32px;
     width: 93vw;
-    transform: translate(1%, -106%);
+    transform: translate(0%, -106%);
   }
 
   .contacts__representatives {
@@ -301,8 +337,8 @@
 
 @media screen and (min-width: 1200px) {
   .contacts__list {
-    width: 97vw;
-    transform: translate(0, -106%);
+    width: 95vw;
+    transform: translate(1%, -106%);
   }
 
   .contacts-section {
@@ -338,6 +374,13 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.88;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .contacts__list {
+    width: 94vw;
+    transform: translate(-5%, -106%);
   }
 }
 
