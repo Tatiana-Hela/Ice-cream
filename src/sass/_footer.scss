@@ -81,6 +81,10 @@
     margin-bottom: 32px;
     margin-left: 420px;
   }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 680px;
+  }
   @media screen and (min-width: 1200px) {
     margin-top: 110px;
     margin-bottom: 40px;
