@@ -90,8 +90,17 @@
   @media screen and (min-width: 321px) {
     left: -30px;
   }
+  @media screen and (min-width: 400px) {
+    left: 6px;
+  }
   @media screen and (min-width: 479px) {
-    left: 40px;
+    left: 51px;
+  }
+  @media screen and (min-width: 600px) {
+    left: 80px;
+  }
+  @media screen and (min-width: 700px) {
+    left: 130px;
   }
 
   @media screen and (min-width: 768px) {
@@ -104,6 +113,7 @@
     margin-top: 39px;
     width: 490px;
     height: 490px;
+    left: 20px;
   }
 }
 .about__img {
@@ -138,16 +148,16 @@
     padding-left: 32px;
   }
   @media screen and (min-width: 1200px) {
-    width: 463px;
+    min-width: 463px;
     padding-right: 0;
-    padding-left: 100px;
+    padding-left: 200px;
     padding-top: 172px;
   }
 }
 .about__paragraph {
   width: 100%;
   margin-bottom: 3px;
-  font-family: 'Montserrat';
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
