@@ -34,7 +34,7 @@
   position: relative;
   background-color: #84a178;
   padding-bottom: 30px;
-  padding-top: 100px;
+  padding-top: 100;
 }
 
 .contacts__representatives {
@@ -264,13 +264,12 @@
   .contacts__list {
     position: absolute;
     display: flex;
-    gap: 32px;
     width: 94vw;
     transform: translate(1%, -106%);
   }
 
   .contacts__representatives {
-    flex-basis: calc((100% - 32px) / 3);
+    flex-basis: calc((100% - 64px) / 3);
   }
 
   .button-list-contacts {
@@ -337,7 +336,7 @@
 
 @media screen and (min-width: 1200px) {
   .contacts__list {
-    width: 94vw;
+    width: 95vw;
     transform: translate(1%, -106%);
   }
 
@@ -379,14 +378,14 @@
 
 @media screen and (min-width: 1366px) {
   .contacts__list {
-    width: 94vw;
-    transform: translate(2%, -106%);
+    width: 95vw;
+    transform: translate(1%, -106%);
   }
 }
 
 @media screen and (min-width: 1440px) {
   .contacts__list {
-    width: 94vw;
-    transform: translate(2%, -106%);
+    width: 95vw;
+    transform: translate(1%, -106%);
   }
 }
