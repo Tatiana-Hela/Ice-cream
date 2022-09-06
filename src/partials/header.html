@@ -1,0 +1,128 @@
+<header class="header">
+  <div class="container header__container">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li>
+          <a class="nav__logo">
+            <picture>
+              <source
+                srcset="
+                  ./images/hero/logo-desktop.png    1x,
+                  ./images/hero/logo-desktop@2x.png 2x
+                "
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="
+                  ./images/hero/logo-tablet.png    1x,
+                  ./images/hero/logo-tablet@2x.png 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./images/hero/logo-mobile.png    1x,
+                  ./images/hero/logo-mobile@2x.png 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                class="logo__img"
+                src="./images/hero/logo-desktop.png"
+                alt="logo"
+              />
+            </picture>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__item-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav__item"></li>
+        <li class="nav__item">
+          <a class="nav__item-link" href="#about">How it’s made?</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__item-link" href="#products">Our products</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__item-link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header__buttons">
+      <li class="header__buttons-item">
+        <button type="button" class="btn-svg" data-menu-open>
+          <svg class="header-svg" width="32" height="32">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="header__buttons-item">
+        <button type="button" class="header-btn">
+          Buy now
+          <svg class="header-btn-svg" width="15" height="15">
+            <use href="./images/icons.svg#arrow-btn"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="mobile-menu" data-menu>
+    <div class="container mobile-menu__container">
+      <button type="button" class="mobile-menu__close-btn" data-menu-close>
+        <svg class="mobile-menu__close-icon" width="32" height="32">
+          <use href="./images/icons.svg#cancel"></use>
+        </svg>
+      </button>
+      <div class="logo-menu">
+        <picture>
+          <source
+            srcset="
+              ./images/hero/logo-tablet.png    1x,
+              ./images/hero/logo-tablet@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/hero/logo-mobile.png    1x,
+              ./images/hero/logo-mobile@2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+
+          <img
+            class="logo-menu-position"
+            src="./images/hero/logo-mobile.png"
+            alt="logo"
+          />
+        </picture>
+      </div>
+      <ul class="mobile-menu_list-nav">
+        <li class="mobile-menu_list-nav-item">
+          <a href="./index.html" class="mobile-menu__list-nav-link">Home</a>
+        </li>
+        <li class="mobile-menu_list-nav-item">
+          <a href="#about" class="mobile-menu__list-nav-link">How it’s made?</a>
+        </li>
+        <li class="mobile-menu_list-nav-item">
+          <a href="#products" class="mobile-menu__list-nav-link"
+            >Our products</a
+          >
+        </li>
+        <li class="mobile-menu_list-nav-item">
+          <a href="#contact" class="mobile-menu__list-nav-link">Contact</a>
+        </li>
+        <li>
+          <button type="button" class="header-btn header-btn-menu">
+            Buy now
+            <svg class="header-btn-svg" width="15" height="15">
+              <use href="./images/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
