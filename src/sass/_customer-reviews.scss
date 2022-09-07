@@ -3,7 +3,22 @@
   width: 100%;
   height: auto;
   margin: auto;
-  border-radius: 26px;
+  border-radius: 7px;
+
+  @media screen and (min-width: 767px) {
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .adv-main-image {
+    width: 280px;
+    transform: translate(0%, -169%);
+  }
 }
 
 @media screen and (max-width: 374px) {
@@ -11,7 +26,6 @@
     padding-top: 186px;
   }
   .adv-main-image {
-    width: 91%;
     transform: translate(0%, -160%);
   }
 }
@@ -20,7 +34,6 @@
     padding-top: 186px;
   }
   .adv-main-image {
-    width: 91%;
     transform: translate(1%, -145%);
   }
 }
@@ -29,6 +42,14 @@
     transform: translate(1%, -135%);
   }
 }
+
+@media screen and (min-width: 480px) {
+  .adv-main-image {
+    width: 440px;
+    transform: translate(0%, -117%);
+  }
+}
+
 @media screen and (min-width: 530px) {
   .adv-main-image {
     transform: translate(1%, -125%);
@@ -41,11 +62,11 @@
 }
 @media screen and (min-width: 768px) {
   .review-section {
-    padding-top: 200px;
+    padding-top: 300px;
   }
   .adv-main-image {
-    width: 88%;
-    transform: translate(6%, -115%);
+    width: 708px;
+    transform: translate(-2%, -117%);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -53,7 +74,6 @@
     padding-top: 350px;
   }
   .adv-main-image {
-    width: 86%;
     transform: translate(5%, -111%);
   }
 }
@@ -62,7 +82,8 @@
     padding-top: 450px;
   }
   .adv-main-image {
-    transform: translate(8%, -123%);
+    width: 1170px;
+    transform: translate(0%, -110%);
   }
 }
 
@@ -126,22 +147,6 @@
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .review-section {
     background-image: url('../images/products/ice-cream-fon-desktop@2x.png');
-  }
-}
-
-.adv-main-image {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  margin: auto;
-  border-radius: 7px;
-
-  @media screen and (min-width: 767px) {
-    border-radius: 18px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    border-radius: 24px;
   }
 }
 
