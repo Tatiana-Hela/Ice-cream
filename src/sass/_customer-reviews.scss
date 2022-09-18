@@ -1,4 +1,5 @@
 .customer-reviews {
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -7,6 +8,7 @@
   .customer-reviews {
     background-image: url('../images/products/ice-cream-fon-mobile.png');
     padding-bottom: 420px;
+    padding-top: 180px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -23,6 +25,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .customer-reviews {
+    padding-top: 218px;
     background-image: url('../images/products/ice-cream-fon-tablet.png');
   }
 }
@@ -43,6 +46,7 @@
   .customer-reviews {
     background-image: url('../images/products/ice-cream-fon-desktop.png');
     padding-bottom: 200px;
+    padding-top: 415px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -52,6 +56,57 @@
     background-image: url('../images/products/ice-cream-fon-desktop@2x.png');
   }
 }
+.gallery__list {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translate(0, -3%);
+}
+
+.gallery__item {
+  height: 130px;
+}
+
+.gallery__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 7.40681px;
+  width: 279px;
+  height: 130px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    height: 327px;
+  }
+  .gallery__image {
+    border-radius: 18px;
+    width: 704px;
+    height: 327px;
+  }
+  .gallery__list {
+    transform: translate(0, -17%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__item {
+    height: 422px;
+  }
+  .gallery__image {
+    border-radius: 24px;
+    width: 1013px;
+    height: 422px;
+  }
+  .gallery__list {
+    transform: translate(0, -9%);
+  }
+}
+
 .customer-reviews__img {
   margin-bottom: 30px;
   margin-left: auto;
