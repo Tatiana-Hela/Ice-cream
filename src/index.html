@@ -1,123 +1,114 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ice cream</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto&family=Seymour+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./sass/index.scss" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ice cream</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto&family=Seymour+One&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/png" />
-  </head>
-  <body>
-    <include src="./partials/header.html"></include>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/advantages.html"></include>
-    <include src="./partials/gallery.html"></include>
-    <include src="./partials/customer-reviews.html"></include>
-    <include src="./partials/contacts.html"></include>
-    <include src="./partials/footer.html"></include>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./sass/index.scss" />
 
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal-about.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script>
-      $('.customer-reviews__slide').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/png" />
+</head>
+
+<body>
+  <include src="./partials/header.html"></include>
+  <include src="./partials/hero.html"></include>
+  <include src="./partials/products.html"></include>
+  <include src="./partials/about.html"></include>
+  <include src="./partials/advantages.html"></include>
+  <include src="./partials/gallery.html"></include>
+  <include src="./partials/customer-reviews.html"></include>
+  <include src="./partials/contacts.html"></include>
+  <include src="./partials/footer.html"></include>
+
+
+  <script src="./js/modal-franchise.js" type="module"></script>
+  <script src="./js/modal-products.js" type="module"></script>
+  <script src="./js/mobile-menu.js" type="module"></script>
+  <script src="./js/modal-about.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.customer-reviews__slide').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+  </script>
+  <script>
+    $('.gallery__list').slick({
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: true,
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+  </script>
+  <script>
+    (() => {
+      const refs = {
+        openModalBtn: document.querySelector('[data-modal-open]'),
+        closeModalBtn: document.querySelector('[data-modal-close]'),
+        modal: document.querySelector('[data-modal]'),
+      };
+
+      refs.openModalBtn.addEventListener('click', toggleModal);
+      refs.closeModalBtn.addEventListener('click', toggleModal);
+
+      function toggleModal() {
+        refs.modal.classList.toggle('is-hidden');
+      }
+    })();
+  </script>
+  <script>
+    (() => {
+      const refs = {
+        openModalBtn: document.querySelectorAll('[data-modal-about-open]'),
+        closeModalBtn: document.querySelector('[data-modal-about-close]'),
+        modal: document.querySelector('[data-modal-about]'),
+      };
+
+      console.log(refs.openModalBtn);
+
+      refs.openModalBtn.forEach(function (btn) {
+        btn.addEventListener('click', toggleModal);
       });
-    </script>
-    <script>
-      $('.gallery__list').slick({
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: true,
-        cssEase: 'linear',
-        autoplay: true,
-        autoplaySpeed: 2000,
-      });
-    </script>
-    <script>
-      (() => {
-        const refs = {
-          openModalBtn: document.querySelector('[data-modal-open]'),
-          closeModalBtn: document.querySelector('[data-modal-close]'),
-          modal: document.querySelector('[data-modal]'),
-        };
+      refs.closeModalBtn.addEventListener('click', toggleModal);
 
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
+      function toggleModal() {
+        document.body.classList.toggle('no-scroll');
+        refs.modal.classList.toggle('is-hidden');
+        document.body.classList.toggle('modal-open');
+      }
+    })();
+  </script>
+</body>
 
-        function toggleModal() {
-          refs.modal.classList.toggle('is-hidden');
-        }
-      })();
-    </script>
-    <script>
-      (() => {
-        const refs = {
-          openModalBtn: document.querySelectorAll('[data-modal-about-open]'),
-          closeModalBtn: document.querySelector('[data-modal-about-close]'),
-          modal: document.querySelector('[data-modal-about]'),
-        };
-
-        console.log(refs.openModalBtn);
-
-        refs.openModalBtn.forEach(function (btn) {
-          btn.addEventListener('click', toggleModal);
-        });
-        refs.closeModalBtn.addEventListener('click', toggleModal);
-
-        function toggleModal() {
-          document.body.classList.toggle('no-scroll');
-          refs.modal.classList.toggle('is-hidden');
-          document.body.classList.toggle('modal-open');
-        }
-      })();
-    </script>
-  </body>
 </html>

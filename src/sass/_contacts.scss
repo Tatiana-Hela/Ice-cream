@@ -389,3 +389,59 @@
     transform: translate(1%, -106%);
   }
 }
+////Franchise/////
+
+.franchise {
+  padding: 28px;
+  overflow-y: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  min-height: 664px;
+  border: 2px solid var(--accent-color);
+  background: var(--primary-text-color);
+  border-radius: 10px;
+  background-color: var(--color-light);
+}
+.franchise__title {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: var(--accent-color-text);
+}
+.franchise__description {
+  font-family: var(--primary-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--accent-color-text);
+}
+.backdrops.is-hidden .franchise {
+  transform: translate(-50%, -50%) scale(0, 7);
+}
+@media screen and (min-width: 768px) {
+  .franchise {
+    padding: 32px 60px;
+    width: 568px;
+    min-height: 668px;
+  }
+  .franchise__title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .franchise__description {
+    font-size: 16px;
+    line-height: 1.38;
+  }
+}
