@@ -1,0 +1,111 @@
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 355px;
+  background-color: var(--color-light);
+
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    height: 458px;
+  }
+}
+
+.location__title {
+  padding-top: 28px;
+  margin-bottom: 20px;
+
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  text-align: center;
+
+  color: var(--accent-color-text);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    margin-bottom: 32px;
+
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.map {
+  width: 224px;
+  height: 199px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 260px;
+
+    margin-bottom: 32px;
+  }
+}
+
+.open-map {
+  width: 152px;
+  height: 42px;
+  background: var(--accent-color);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+
+  color: var(--accent-color-text);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+    color: var(--color-light);
+    transform: scale(1.05);
+    outline: none;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.map__wrapper {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  width: 224px;
+  height: 199px;
+
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 260px;
+  }
+}

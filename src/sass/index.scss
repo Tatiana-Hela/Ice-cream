@@ -1,8 +1,15 @@
 @import './common';
+@import './base/container';
 @import './utils/placeholders';
 @import './utils/utils';
 @import './utils/variables';
 @import './utils/visually-hidden';
+
+@import './components/modal-location';
+@import './components/modal-franchise';
+@import './components/modal-about';
+@import './components/modal-products';
+@import './components/mobile-menu';
 
 @import './hero';
 @import './header';
