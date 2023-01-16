@@ -7,14 +7,14 @@
 @media screen and (max-width: 767px) {
   .contacts-absolute {
     position: absolute;
-    width: 94vw;
-    transform: translate(0, -105%);
+    width: 91vw;
+    transform: translate(-0%, -105%);
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .contacts-absolute {
-    width: 91vw;
+    width: 440px;
   }
 }
 
@@ -27,6 +27,11 @@
 @media screen and (max-width: 320px) {
   .contacts-absolute {
     width: 88vw;
+  }
+}
+@media screen and (min-width: 767px) {
+  .contacts-absolute {
+    width: 224px;
   }
 }
 

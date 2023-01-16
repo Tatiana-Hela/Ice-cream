@@ -113,14 +113,16 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    border-radius: 50%;
-    transform: scale(1.05);
+  @media screen and (min-width: 480px) {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      border-radius: 50%;
+      transform: scale(1.05);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    }
   }
 }
 .customer-reviews__text {
@@ -138,20 +140,21 @@
   color: var(--primary-text-color);
   background-color: var(--secondary-bg);
   border-radius: 10px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    transform: scale(1.05);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-  }
 }
 @media screen and (min-width: 480px) {
   .customer-reviews__text {
     width: 404px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      border-radius: 10px;
+      transform: scale(1.05);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    }
   }
 }
 @media screen and (min-width: 768px) {
