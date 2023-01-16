@@ -1,7 +1,9 @@
 <section class="products section">
   <div class="products-container container">
-    <p class="products__label">100% natural</p>
-    <h2 class="products__title"><a id="products">products</a></h2>
+    <p data-aos="fade-down" class="products__label">100% natural</p>
+    <h2 data-aos="fade-down" class="products__title">
+      <a id="products">products</a>
+    </h2>
     <ul class="products__menu">
       <li class="products__list">
         <div class="products__card products__card--green-bg">
@@ -10,7 +12,11 @@
             Soft ice cream with a delicate taste. Made with milk, cream, sugar
             and natural stabilizer
           </p>
-          <button class="products__btn-more" type="button" data-modal-products-open>
+          <button
+            class="products__btn-more"
+            type="button"
+            data-modal-products-open
+          >
             <svg class="products__icon-arrow" width="65" height="65">
               <use href="./images/icons.svg#button"></use>
             </svg>
@@ -55,26 +61,32 @@
         </svg>
       </button>
       <h2 class="ingredients-ice-cream__title">Chocolate ice-cream</h2>
-      <img class="ingredients-ice-cream__img" srcset="
-            ./images/products/ice-cream-chocolate.png    1x,
-            ./images/products/ice-cream-chocolate@2x.png
-          " alt="ice-cream chocolate" width="160" height="150" />
+      <img
+        class="ingredients-ice-cream__img"
+        srcset="
+          ./images/products/ice-cream-chocolate.png    1x,
+          ./images/products/ice-cream-chocolate@2x.png
+        "
+        alt="ice-cream chocolate"
+        width="160"
+        height="150"
+      />
       <ul class="ingredients-ice-cream__list">
         <li class="ingredients-ice-cream__item">
-          <span class="ingredients-ice-cream__composition">kcal</span><span
-            class="ingredients-ice-cream__composition-g">320</span>
+          <span class="ingredients-ice-cream__composition">kcal</span
+          ><span class="ingredients-ice-cream__composition-g">320</span>
         </li>
         <li class="ingredients-ice-cream__item">
-          <span class="ingredients-ice-cream__composition">Prote...</span><span
-            class="ingredients-ice-cream__composition-g">4g</span>
+          <span class="ingredients-ice-cream__composition">Prote...</span
+          ><span class="ingredients-ice-cream__composition-g">4g</span>
         </li>
         <li class="ingredients-ice-cream__item">
-          <span class="ingredients-ice-cream__composition">Fats</span><span
-            class="ingredients-ice-cream__composition-g">8,2g</span>
+          <span class="ingredients-ice-cream__composition">Fats</span
+          ><span class="ingredients-ice-cream__composition-g">8,2g</span>
         </li>
         <li class="ingredients-ice-cream__item">
-          <span class="ingredients-ice-cream__composition">Carbs</span><span
-            class="ingredients-ice-cream__composition-g">40,4g</span>
+          <span class="ingredients-ice-cream__composition">Carbs</span
+          ><span class="ingredients-ice-cream__composition-g">40,4g</span>
         </li>
       </ul>
       <table class="table">
@@ -109,11 +121,29 @@
         </tbody>
       </table>
       <form class="modal-form">
-        <input class="modal-form__input" type="text" name="user_name" placeholder="Name" required
-          pattern="^[a-zA-Zа-яА-Я]+$" minlength="2" />
-        <input class="modal-form__input" type="tel" name="user_phone" placeholder="Phone" required
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}" title="xxx-xxx-xxx-xxx" />
-        <textarea class="modal-form__comment" name="user_text" placeholder="Comment"></textarea>
+        <input
+          class="modal-form__input"
+          type="text"
+          name="user_name"
+          placeholder="Name"
+          required
+          pattern="^[a-zA-Zа-яА-Я]+$"
+          minlength="2"
+        />
+        <input
+          class="modal-form__input"
+          type="tel"
+          name="user_phone"
+          placeholder="Phone"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+          title="xxx-xxx-xxx-xxx"
+        />
+        <textarea
+          class="modal-form__comment"
+          name="user_text"
+          placeholder="Comment"
+        ></textarea>
         <button class="submit-btn" type="submit">Submit</button>
       </form>
     </div>
