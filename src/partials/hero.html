@@ -1,98 +1,97 @@
 <section class="hero">
   <div class="position-fon"></div>
   <div class="container">
-    <div class="title-width">
       <div class="hero__wrap">
         <h1 class="hero__title">ice cream made with</h1>
         <span class="hero__title-lable">passion</span>
-      </div>
-      <ul class="hero-info">
-        <li class="hero-info__item">
-          <a class="hero-info__link" href="#products">Products</a>
-        </li>
-        <li class="hero-info__item">
-          <a class="hero-info__link-text">How it’s made?</a>
-        </li>
-      </ul>
 
-      <ul class="hero-list">
-        <li class="hero-list__item">
-          <span class="hero-list__span">16</span>
-          <span class="hero-list__span-white">cafes</span>
-        </li>
-        <li class="hero-list__item">
-          <span class="hero-list__span">23</span>
-          <span class="hero-list__span-white">food trucks</span>
-        </li>
-      </ul>
-    </div>
-    <div class="hero__wrap">
-      <picture>
-        <source
-          srcset="
-            ./images/hero/plate-desktop.png    1x,
-            ./images/hero/plate-desktop@2x.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/hero/plate-tablet.png    1x,
-            ./images/hero/plate-tablet@2x.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <img
-          loading="lazy"
-          class="hero__img"
-          src="./images/hero/plate-tablet.png"
-          alt="plate of ice cream"
-          width="152"
-        />
-      </picture>
-      <div class="hero__wrap">
-        <p class="hero__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
-        <div class="hero-arow">
-          <a class="hero-arow__link">
-            <svg class="hero__icon" width="5" height="5">
-              <use href="./images/icons.svg#button"></use>
-            </svg>
-          </a>
-        </div>
+        <ul class="hero-list">
+          <li class="hero-list__item">
+            <span class="hero-list__span">16</span>
+            <span class="hero-list__span-white">cafes</span>
+          </li>
+          <li class="hero-list__item">
+            <span class="hero-list__span">23</span>
+            <span class="hero-list__span-white">food trucks</span>
+          </li>
+        </ul>
+
+        <ul class="hero-info">
+          <li class="hero-info__item">
+            <a class="hero-info__link" href="#products">Products</a>
+          </li>
+          <li class="hero-info__item">
+            <a class="hero-info__link-text">How it’s made?</a>
+          </li>
+        </ul>
       </div>
-      <picture>
-        <source
-          srcset="
-            ./images/hero/ice-cream-desktop.png    1x,
-            ./images/hero/ice-cream-desktop@2x.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/hero/ice-cream-tablet.png 1x,
-            ./images/hero/ice-cream-tablet.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/hero/ice-cream-mobile.png    1x,
-            ./images/hero/ice-cream-mobile@2x.png 2x
-          "
-          media="(min-width: 320px)"
-        />
-        <img
-          loading="lazy"
-          class="hero__ice"
-          src="./images/hero/ice-cream-mobile.png"
-          alt="Ice cream"
-          width="171"
-        />
-      </picture>
-    </div>
-  </div>
+      <div class="hero__wrap hero__wrap--flex">
+        <picture>
+          <source
+            srcset="
+              ./images/hero/plate-desktop.png    1x,
+              ./images/hero/plate-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero/plate-tablet.png    1x,
+              ./images/hero/plate-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            loading="lazy"
+            class="hero__img"
+            src="./images/hero/plate-tablet.png"
+            alt="plate of ice cream"
+            width="152"
+          />
+        </picture>
+        <div class="hero__wrap">
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <div class="hero-arow">
+            <a class="hero-arow__link" href="#contacts">
+              <svg class="hero__icon" width="75" height="75">
+                <use href="./images/icons.svg#button"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <picture>
+          <source
+            srcset="
+              ./images/hero/ice-cream-desktop.png    1x,
+              ./images/hero/ice-cream-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero/ice-cream-tablet.png 1x,
+              ./images/hero/ice-cream-tablet.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/hero/ice-cream-mobile.png    1x,
+              ./images/hero/ice-cream-mobile@2x.png 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+            loading="lazy"
+            class="hero__ice"
+            src="./images/hero/ice-cream-mobile.png"
+            alt="Ice cream"
+            width="171"
+          />
+        </picture>
+      </div>
+   
 </section>
