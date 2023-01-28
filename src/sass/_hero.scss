@@ -5,14 +5,18 @@
   background-color: var(--secondary-bg);
 }
 
-.hero__title {
-  font-family: var(--secondary-font);
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.26;
-  //   width: 247px;
-  text-transform: uppercase;
-  text-align: left;
+.hero__wrap {
+  position: relative;
+}
+
+.hero__wrap--flex {
+  align-items: center;
+  padding-bottom: 167px;
+  margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 40px;
+    padding-bottom: 263px;
+  }
 }
 
 .hero__title-lable {
@@ -27,13 +31,21 @@
 
 .hero__title {
   width: 240px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.26;
+  text-transform: uppercase;
+  display: block;
 
   @media screen and (min-width: 768px) {
     width: 200px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 375px;
+    width: 367px;
+    font-size: 38px;
+    line-height: 1.26;
   }
 }
 
@@ -49,7 +61,7 @@
   position: absolute;
   width: 170px;
   height: 219px;
-  bottom: -36px;
+  bottom: -22px;
   right: 29%;
 }
 
@@ -120,7 +132,7 @@
   margin-right: 8px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .position-fon {
     background-image: url('../images/hero/frame-mobile.png');
     height: 50px;
@@ -131,13 +143,11 @@
   }
 }
 
-@media screen and(min-width:480px) and (max-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 479px),
+  screen and (min-resolution: 2dppx) and (max-width: 479px) {
   .position-fon {
-    height: 50px;
-    width: 100%;
-    background-repeat: repeat-x;
-    position: absolute;
-    bottom: 0;
+    background-image: url('../images/hero/frame-mobile@2x.png');
   }
 }
 
@@ -146,30 +156,6 @@
     height: 67px;
     width: 100%;
     background-image: url('../images/hero/frame-tablet.png');
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 479px),
-  screen and (min-resolution: 192dpi) and (max-width: 479px),
-  screen and (min-resolution: 2dppx) and (max-width: 479px) {
-  .position-fon {
-    background-image: url('../images/hero/frame-mobile@2x.png');
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .position-fon {
-    height: 67px;
-    width: 100%;
-    background-image: url('../images/hero/fon-brekpoint.png');
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px) and (max-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 480px) and (max-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 480px) and (max-width: 768px) {
-  .position-fon {
-    background-image: url('../images/hero/fon-brekpoint@2x.png');
   }
 }
 
@@ -186,7 +172,6 @@
     height: 384px;
     width: 100%;
     background-image: url('../images/hero/frame-desktop.png');
-    // padding-bottom: 200px;
   }
 }
 
@@ -212,15 +197,15 @@
   font-size: 8px;
   line-height: 1.25px;
   color: var(--color-light);
-  margin-top: 28px;
+  margin-top: 10px;
   text-align: right;
 }
 
 .hero__text {
   position: absolute;
   width: 150px;
-  bottom: 50px;
-  left: 215px;
+  bottom: -100px;
+  left: 173px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
@@ -229,7 +214,8 @@
 
 .hero__icon {
   position: absolute;
-  bottom: 30px;
+  bottom: -173px;
+  left: 162px;
   fill: var(--color-light);
 }
 
@@ -245,7 +231,7 @@
   .hero__img {
     position: absolute;
     bottom: 13px;
-    left: 30px;
+    left: -6px;
     & {
       -webkit-animation: spin 5s linear infinite;
       -moz-animation: spin 5s linear infinite;
@@ -276,8 +262,8 @@
 
   .hero-list {
     position: absolute;
-    right: 30px;
-    top: 50px;
+    top: 15px;
+    right: 0;
     text-align: right;
   }
 
@@ -310,7 +296,6 @@
   }
 
   .hero-list {
-    right: 15px;
     top: 30px;
   }
 
@@ -322,12 +307,12 @@
     font-size: 32px;
   }
   .hero__text {
-    bottom: 104px;
+    bottom: -154px;
   }
   .hero__img {
     position: absolute;
     bottom: 13px;
-    left: 30px;
+    // left: -6px;
   }
 
   .hero__ice {
@@ -364,6 +349,7 @@
   .hero-list__span-white {
     font-size: 14px;
     line-height: 1.21px;
+    margin-bottom: 20px;
     color: var(--color-light);
   }
 
@@ -378,9 +364,15 @@
     font-size: 14px;
     line-height: 1.21px;
   }
+
+  .hero__icon {
+    bottom: -225px;
+    left: 200px;
+  }
 }
 @media screen and (min-width: 1300px) {
   .position-fon {
-    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
   }
 }
