@@ -1,12 +1,12 @@
-.hero__wrap {
-  position: relative;
-}
-
 .hero {
   position: relative;
   height: 370px;
   padding-top: 40px;
   background-color: var(--secondary-bg);
+}
+
+.hero__wrap {
+  position: relative;
 }
 
 .hero__wrap--flex {
